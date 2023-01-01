@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr1: rgb(237, 125, 58);
+  --clr2: rgb(254, 254, 255);
+  --clr3: rgb(104, 116, 232);
+  --clr4: rgb(57, 39, 89);
+}
+.row {
+  display: flex;
+}
+.title {
+  justify-content: center;
+  margin: 2.5rem auto;
+  padding: 3.5rem;
+  background-color: var(--clr3);
+  color: var(--clr2);
+  font-size: 3rem;
+  width: 90%;
+  float: left;
+}
+.main {
+  padding: 3rem;
+}
+.left,
+#right {
+  float: left;
+  background-color: var(--clr2);
+  color: var(--clr4);
+  border: none;
+  transition-duration: 0.4s;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.activeL,
+.left:hover {
+  background-color: var(--clr1);
+  color: var(--clr2);
+}
+.right,
+#right {
+  float: right;
+  background-color: var(--clr2);
+  color: var(--clr4);
+  border: none;
+  transition-duration: 0.4s;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.activeR,
+.right:hover {
+  background-color: var(--clr1);
+  color: var(--clr2);
+}
+input[type="text"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid var(--clr3);
+  border-radius: 4px;
+}
+input[type="number"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid var(--clr3);
+  border-radius: 4px;
+}
+.frame {
+  padding-left: 6rem;
+}

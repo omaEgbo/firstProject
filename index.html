@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row">
+        <h1 class="title"> Welcome to the Currency converter Web Page</h1> 
+    </div>
+    <div class="main">
+        <div id ="upper">
+            <div id="left">
+                <button class="left activeL" type="submit" id="ausd" value="0"> Usd</button>
+                <button class="left" type="submit" id="angn" value="1">Ngn</button>
+                <button class="left" type="submit" id="aeur" value="2">Eur</button>
+            </div>
+            <div id="right">
+                <button class="right" type ="submit" id="busd" value="3"> Usd</button>
+                <button class="right activeR" type ="submit" id="bngn" value="4">Ngn</button>
+                <button class="right" type ="submit" id="beur" value="5">Eur</button>
+            </div>
+        </div>
+        <div class="frame">
+            <input type="number"  id="input" placeholder="select value of currency">
+        </div>
+        <div class="frame">
+            <input type="text"  id="output" placeholder="result" readonly>
+        </div>
+        </div>
+        <div class="back"></div>
+    <script src="index.js"></script>
+</body>
+</html>
